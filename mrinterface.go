@@ -2,15 +2,6 @@ package mapreduce
 
 import "container/list"
 
-//mapper接口，用于映射数据
-type Mapper interface {
-	mapper (data interface{}) MapperedDataEntry
-}
-
-//Reduce接口，用于映射数据
-type Reducer interface {
-	reduce (in MapperedDataSet) interface{}
-}
 
 type MapperedDataEntry struct {
 	key,value interface{}

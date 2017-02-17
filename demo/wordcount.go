@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	mrc := mapreduce.MRContainer{MapperCount:1,ReducerCount:1}
+	mrc := mapreduce.MRContainer{MapperCount:2,ReducerCount:2}
 	mrc.Init()
 	mrc.SetMapper(wdctMapper)
 	mrc.SetReducer(wdctReduce)
